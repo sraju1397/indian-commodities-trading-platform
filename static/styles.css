@@ -1,0 +1,192 @@
+/* Modern Trading Platform Styles */
+
+/* Main Layout */
+.main {
+    padding: 1rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Header Banner */
+.header-banner {
+    background-color: #1a1a1a;
+    color: white;
+    padding: 2rem;
+    border-radius: 10px;
+    margin-bottom: 2rem;
+    text-align: center;
+    background-size: cover;
+    background-position: center;
+}
+
+/* Market Status Indicators */
+.market-status {
+    font-weight: bold;
+    padding: 0.75rem;
+    border-radius: 8px;
+    text-align: center;
+    margin: 1rem 0;
+}
+
+.market-open {
+    background-color: rgba(40, 167, 69, 0.1);
+    color: #28a745;
+    border: 1px solid #28a745;
+}
+
+.market-closed {
+    background-color: rgba(220, 53, 69, 0.1);
+    color: #dc3545;
+    border: 1px solid #dc3545;
+}
+
+/* Metric Cards */
+.metric-card {
+    background-color: #ffffff;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    padding: 1.5rem;
+    margin: 1rem 0;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.metric-card:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transform: translateY(-2px);
+    transition: all 0.3s ease;
+}
+
+/* Trading Indicators */
+.indicator {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.5rem;
+    border-radius: 6px;
+    margin: 0.25rem 0;
+}
+
+.indicator-bullish {
+    background-color: rgba(40, 167, 69, 0.1);
+    color: #28a745;
+}
+
+.indicator-bearish {
+    background-color: rgba(220, 53, 69, 0.1);
+    color: #dc3545;
+}
+
+.indicator-neutral {
+    background-color: rgba(255, 193, 7, 0.1);
+    color: #ffc107;
+}
+
+/* Alerts and Notifications */
+.alert {
+    padding: 1rem;
+    border-radius: 8px;
+    margin: 1rem 0;
+    border-left: 4px solid;
+}
+
+.alert-success {
+    background-color: rgba(40, 167, 69, 0.1);
+    border-left-color: #28a745;
+}
+
+.alert-warning {
+    background-color: rgba(255, 193, 7, 0.1);
+    border-left-color: #ffc107;
+}
+
+.alert-error {
+    background-color: rgba(220, 53, 69, 0.1);
+    border-left-color: #dc3545;
+}
+
+/* Navigation */
+.nav-link {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.75rem 1rem;
+    border-radius: 6px;
+    margin: 0.25rem 0;
+    text-decoration: none;
+    color: #1a1a1a;
+}
+
+.nav-link:hover {
+    background-color: rgba(0, 0, 0, 0.05);
+}
+
+.nav-link.active {
+    background-color: #1a1a1a;
+    color: white;
+}
+
+/* Data Tables */
+.table-container {
+    border-radius: 8px;
+    overflow: hidden;
+    border: 1px solid #e0e0e0;
+}
+
+/* Charts */
+.chart-container {
+    background-color: white;
+    border-radius: 8px;
+    padding: 1rem;
+    margin: 1rem 0;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+/* Loading Spinners */
+.loading-spinner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+}
+
+/* Tooltips */
+.tooltip {
+    position: relative;
+    display: inline-block;
+}
+
+.tooltip .tooltip-text {
+    visibility: hidden;
+    background-color: #1a1a1a;
+    color: white;
+    text-align: center;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    position: absolute;
+    z-index: 1;
+    bottom: 125%;
+    left: 50%;
+    transform: translateX(-50%);
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+.tooltip:hover .tooltip-text {
+    visibility: visible;
+    opacity: 1;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .metric-card {
+        margin: 0.5rem 0;
+    }
+    
+    .header-banner {
+        padding: 1rem;
+    }
+    
+    .nav-link {
+        padding: 0.5rem;
+    }
+}
