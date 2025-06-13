@@ -1,0 +1,24 @@
+runtime: python311
+
+service: mcx-trade-app
+
+env_variables:
+  PORT: 8080
+  DEBUG: false
+  DEFAULT_RISK_LEVEL: moderate
+  AUTO_REFRESH_INTERVAL: 15
+  ENABLE_ALERTS: true
+  
+automatic_scaling:
+  min_instances: 0
+  max_instances: 10
+  target_cpu_utilization: 0.6
+
+resources:
+  cpu: 1
+  memory_gb: 2
+  disk_size_gb: 10
+
+handlers:
+- url: /.*
+  script: auto
